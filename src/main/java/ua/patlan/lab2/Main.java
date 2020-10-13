@@ -17,8 +17,10 @@ public class Main {
         book2.setAuthor("aaaa2");
 
         BookService bookDAO=(BookService) context.getBean("bookServiceImpl");
+
         bookDAO.save(book1);
         bookDAO.save(book2);
+
         System.out.println("bookDAO.findAll()");
         System.out.println(bookDAO.findAll());
 
