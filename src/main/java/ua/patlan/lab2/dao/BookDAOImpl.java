@@ -1,17 +1,16 @@
 package ua.patlan.lab2.dao;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import ua.patlan.lab2.entity.Book;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
-@Repository
+@Component
 @Transactional
 public class BookDAOImpl extends DAOUtils implements BookDAO {
-
-
 
     @Override
     public List<Book> findAll() {
